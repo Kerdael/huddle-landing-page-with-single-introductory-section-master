@@ -45,7 +45,7 @@ body {
   display: flex;
   flex-wrap: wrap;
 
-  /* grid-auto-rows: 1fr; */
+ 
 }
 .section-a {
   margin-left: auto;
@@ -124,6 +124,9 @@ body {
 }
 .facebook{
   padding: 7px;
+  width: auto;
+  height: 0.7rem;
+  padding: 7px;
 }
 .twitter {
   margin-left: 10px;
@@ -170,13 +173,9 @@ body {
 
   .links img {
     height: 1.5em;
-    /* padding: 7px; */
+  
   }
-  /* .facebook {
-    width: 1.5rem;
-    padding: 7px;
-  } */
-
+ 
   body {
     background: url(/images/bg-desktop.svg);
     background-repeat: no-repeat;
@@ -202,32 +201,28 @@ body {
   .btn {
     margin-top: 5px;
   }
-  /* .links img{
-  height: 1rem;
-  padding: 3px;
-} */
+
   .section-a img {
-    /* width: 100%;
-  height: auto; */
+  
     margin-left: auto;
     margin-right: auto;
   }
   .facebook,
   .instagram,
   .twitter {
-    /* width: auto; */
-
-    width: 0.4;
-    padding: 3px;
-
+    
     border-radius: 50%;
     border: 2px solid white;
   }
-
+  .facebook{
+    
+   
+    padding: 7px;
+  }
   .twitter img,
   .instagram img {
     width: auto;
-    height: 1.2rem;
+   
   }
   .main {
     margin-top: 20px;
