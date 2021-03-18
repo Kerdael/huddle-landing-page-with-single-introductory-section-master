@@ -65,12 +65,12 @@ body {
 }
 .section-b h1 {
   font-weight: 600;
-  font-size: 1.7rem;
-  line-height: 3rem;
+  font-size: 1.4rem;
+  line-height: 1.9rem;
   margin-bottom: 10px;
 }
 .section-b p {
-  line-height: 1.8rem;
+  line-height: 1.5rem;
   font-size: 1.1rem;
   font-weight: 400;
   opacity: 0.8;
@@ -82,7 +82,7 @@ body {
   height: 30px;
   padding-top: 10px;
   text-align: center;
-  margin-top: 30px;
+  margin-top: 20px;
   border-radius: 50px;
   display: grid;
   margin-left: auto;
@@ -90,7 +90,7 @@ body {
 }
 /* footer*/
 .links {
-  margin-top: 50px;
+  margin-top: 15px;
   cursor: pointer;
   margin-left: auto;
   margin-right: auto;
@@ -100,46 +100,40 @@ body {
   transform: translateX(-50%);
   display: flex;
 }
+.links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .facebook,
 .instagram,
 .twitter {
-  fill: white;
-  width: 35px;
-  height: 35px;
-  padding: 8px;
+  /* width: auto; */
+  /* height: 1.2rem;
+  padding: 8px; */
 
   border-radius: 50%;
-  border: 1px solid white;
+  border: 2px solid white;
 }
 .facebook img,
 .twitter img,
 .instagram img {
   width: auto;
-  height: 35px;
+  height: 0.7rem;
+  padding: 7px;
+}
+.facebook{
+  padding: 7px;
 }
 .twitter {
-  fill: white;
-  width: 35px;
-  height: 35px;
-  padding: 8px;
-
-  border-radius: 50%;
-  border: 1px solid white;
-
   margin-left: 10px;
   margin-right: 10px;
 }
-.instagram {
-  fill: white;
-  width: 35px;
-  height: 35px;
-  padding: 8px;
-
-  border-radius: 50%;
-  border: 1px solid white;
+.main{
+  max-width: 1440px;
 }
 .attribution {
-  font-size: 0.7rem;
+  font-size: 0.5rem;
   text-align: center;
   position: absolute;
   bottom: 0;
@@ -168,6 +162,20 @@ body {
     transform: translateX(100%);
     right: 22%;
   }
+  .links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .links img {
+    height: 1.5em;
+    /* padding: 7px; */
+  }
+  /* .facebook {
+    width: 1.5rem;
+    padding: 7px;
+  } */
 
   body {
     background: url(/images/bg-desktop.svg);
@@ -185,5 +193,55 @@ body {
     background-color: var(--violet);
     height: 100vh;
     width: 100vw;
+  }
+}
+@media screen and (max-width: 375px) {
+  .container {
+    width: 80%;
+  }
+  .btn {
+    margin-top: 5px;
+  }
+  /* .links img{
+  height: 1rem;
+  padding: 3px;
+} */
+  .section-a img {
+    /* width: 100%;
+  height: auto; */
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .facebook,
+  .instagram,
+  .twitter {
+    /* width: auto; */
+
+    width: 0.4;
+    padding: 3px;
+
+    border-radius: 50%;
+    border: 2px solid white;
+  }
+
+  .twitter img,
+  .instagram img {
+    width: auto;
+    height: 1.2rem;
+  }
+  .main {
+    margin-top: 20px;
+  }
+  .section-b h1 {
+    font-weight: 600;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    margin-bottom: 10px;
+  }
+  .section-b p {
+    line-height: 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    opacity: 0.8;
   }
 }
